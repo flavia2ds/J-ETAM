@@ -1,0 +1,25 @@
+@use "../utils/variables" as v;
+
+.cta {
+  display: inline-block;
+  font-family: v.$a-font;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+
+  @media screen and (min-width: v.$bp-desktop) {
+    font-size: 20px;
+  }
+}

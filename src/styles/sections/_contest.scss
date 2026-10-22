@@ -1,0 +1,45 @@
+@use "../utils/variables" as v;
+
+.contest {
+  background-color: v.$d-color;
+  padding: 70px 30px;
+  text-align: center;
+
+  &__title {
+    font-family: v.$b-font;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-family: v.$b-font;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+  }
+
+  &__description {
+    font-family: v.$b-font;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (min-width: v.$bp-desktop) {
+    &__title {
+      font-size: 71px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+
+    &__description {
+      font-size: 20px;
+    }
+  }
+}

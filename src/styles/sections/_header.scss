@@ -1,0 +1,28 @@
+@use "../utils/variables" as v;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+  &__nav-desktop {
+    display: none;
+  }
+
+  @media screen and (min-width: v.$bp-desktop) {
+    padding: 20px 20px;
+    &__nav-mobile {
+      display: none;
+    }
+
+    &__nav-desktop {
+      display: block;
+    }
+  }
+}

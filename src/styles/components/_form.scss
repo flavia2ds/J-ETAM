@@ -1,0 +1,51 @@
+@use "../utils/variables" as v;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__required {
+    color: v.$c-color;
+  }
+
+  &__input {
+    padding: 14px;
+    border: 1px solid v.$a-color;
+  }
+
+  &__error {
+    color: v.$c-color;
+    visibility: hidden;
+  }
+
+  &__submit {
+    margin-top: 5px;
+    padding: 14px;
+    background: v.$c-color;
+    color: v.$b-color;
+    font-family: v.$a-font;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.form__field--error .form__input {
+  border-color: v.$c-color;
+}
+
+.form__field--error .form__error {
+  visibility: visible;
+}

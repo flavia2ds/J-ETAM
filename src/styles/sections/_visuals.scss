@@ -1,0 +1,89 @@
+@use "../utils/variables" as v;
+
+.visuals {
+  &__intro {
+    padding: 70px 30px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__text--intro {
+    padding-bottom: 50px;
+    font-family: v.$a-font;
+  }
+
+  &__text--date {
+    font-family: v.$b-font;
+    font-weight: 300;
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    color: v.$b-color;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__text--jtm {
+    font-family: v.$a-font;
+    padding: 70px 30px;
+  }
+
+  &__text--manifeste {
+    font-family: v.$a-font;
+    padding: 70px 30px;
+  }
+
+  &__image2 {
+    display: none;
+  }
+
+  &__image3 {
+    display: none;
+  }
+
+  @media screen and (min-width: v.$bp-desktop) {
+    &__intro {
+      padding: 70px 300px;
+      text-align: center;
+    }
+
+    &__text--intro {
+      font-size: 20px;
+    }
+
+    &__items {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    &__image1,
+    &__image2,
+    &__image3 {
+      display: block;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    &__text--date {
+      bottom: 80px;
+      left: 36%;
+    }
+
+    &__text--jtm {
+      padding: 70px 300px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    &__text--manifeste {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      padding: 70px 300px;
+      padding-bottom: 70px;
+    }
+  }
+}

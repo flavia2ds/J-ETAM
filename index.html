@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Etam présente la 17ème édition de son Live Show J’ETAM, le 30 septembre à 21h au Palais Brongniart." />
+    <title>J’ETAM Live Show 2025</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <img  class="header__nav-mobile" src="/src/assets/icones/nav_mobile.svg" alt="">
+      <img  class="header__nav-desktop" src="/src/assets/icones/nav_desktop.svg" alt="">
+    </header>
+
+    
+
+    <section class="hero">
+      <img class="hero__img1" src="/src/assets/img/hero_pure_soft_etam.webp" alt="Mannequin assis en lingerie Etam sur fond rouge">
+      <img class="hero__img2" src="/src/assets/img/hero-desktop_pure soft_etam.webp" alt="Mannequin assis en lingerie Etam sur fond rouge">
+
+     <h1 class="hero__title">
+        <img src="/src/assets/img/jetam.webp" alt="J’ETAM">
+     </h1>
+
+      <div class="hero__subtitle">
+        <img src="/src/assets/img/live_show_2025.webp" alt="Live Show 2025">
+        <img src="/src/assets/img/30_septembre_21h.webp" alt="30 septembre - 21h">
+      </div>
+    </section>
+
+
+    <section class="visuals">
+      <div class="visuals__intro">
+        <p class="visuals__text--intro">
+          Etam s’apprête à écrire un nouveau chapitre avec 
+          la 17ème édition de son incontournable Live Show. 
+          Plus qu’un défilé, un rendez-vous singulier qui 
+          bouscule les codes et réinvente la rencontre entre 
+          lingerie, mode et culture.
+        </p>
+
+        <a class="cta" href="#">Save the date</a>
+      </div>
+
+
+      <div class="visuals__container">
+
+        <div class="visuals__items"> 
+          <img class="visuals__image1" src="/src/assets/img/visual_nayade_etam.webp" alt="Mannequin en lingerie en dentelle bordeau et fleurie Etam sur fond rouge">
+          <img  class="visuals__image2" src="/src/assets/img/visual_nayade_etam2.webp" alt="Mannequin en lingerie en dentelle  bordeau et fleurie Etam sur fond rouge">
+          <img  class="visuals__image3" src="/src/assets/img/visual_fleuris_show_etam.webp" alt="Mannequin en lingerie en dentelle noir et fleurie Etam sur fond rouge">
+        </div>
+       
+
+        <div class="visuals__text--date">
+          <p>J’Etam Live Show </p>
+          <p>30 septembre à 21h</p>
+          <p>Palais Brongniart</p>
+        </div>
+      </div>
+
+
+      
+
+
+      <div class="visuals__text--jtm">
+        <p>J’ETAM. </p>
+        
+        <p>Un manifesto, une déclaration d’amour. Un mot inventé, 
+          tendre et rebelle, fusion de “Je t’aime” et d’ETAM, 
+          qui devient la langue intime des femmes d’aujourd’hui.
+        </p>
+      </div>
+      
+      <div class="visuals__items"> 
+          <img class="visuals__image1" src="/src/assets/img/visual_pure_soft_etam2.webp" alt="Mannequin en lingerie rose pale">
+          <img  class="visuals__image2" src="/src/assets/img/visual_voleuse_etam.webp" alt="Mannequin en lingerie rose pale">
+          <img  class="visuals__image3" src="/src/assets/img/visual_pure_soft_etam.webp" alt="Mannequin en lingerie rose pale">
+      </div>
+
+      <div class="visuals__text--manifeste">        
+        <p>Porté par la vision créative d’Olivier Leone 
+          et de l’agence Pragma, le Live Show 2025 donne 
+          vie au manifeste J’ETAM, dans une mise en scène 
+          conçue comme une véritable narration visuelle.
+        </p>
+      </div>
+
+    </section>
+
+
+    <section class="video">
+
+      <div class="video__elements">
+        <video class="video__element1" controls loop playsinline preload="metadata">
+         <source src="/src/assets/video/etam_jetam_tendresse.webm" type="video/webm">
+        </video>
+
+        <img class="video__element2" src="/src/assets/img/video_etam.webp" alt="Culotte brodée du mot J’etam">
+      </div>
+     
+
+
+      <div class="video__credits">
+        <div class="video__credits1">
+          <p>Direction créative : Olivier Leone</p>
+          <p>Agence : Pragma</p>
+          <p>Photographe : Brianna Capozzi</p>
+        </div>
+
+        <div class="video__credits2">
+          <p>Styliste : Vanessa Reid</p>
+          <p>Maquillage : Lucy Bridge</p>
+          <p>Coiffure : Claire Grech</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section class="contest">
+      <h2 class="contest__title">Jeu concours</h2>
+
+      <p class="contest__subtitle">Vivez le Etam Liveshow en VIP le 30 septembre</p>
+
+      <div class="contest__description">
+        <p>Tentez de gagner 2 places exclusives</p>
+        <p>Inscrivez-vous jusqu’au 26.09</p>
+      </div>
+
+      <button class="cta" type="button" data-open-modal>Je tente ma chance</button>
+    </section>
+
+
+    <dialog class="modal" id="contest-modal" aria-labelledby="modal-title">
+      <div class="modal__content">
+       <button class="modal__close" type="button" aria-label="Fermer" data-close-modal>×</button>
+
+       <h2 class="modal__title" id="modal-title">Tentez votre chance</h2>
+        <p class="modal__text">Remplissez le formulaire pour participer au tirage au sort.</p>
+
+        <form class="form" id="contest-form" novalidate>
+          <div class="form__field">
+            <label class="form__label" for="firstname">Prénom <span class="form__required" aria-hidden="true">*</span></label>
+            <input class="form__input" id="firstname" name="firstname" type="text" placeholder="Prénom" autocomplete="given-name" required>
+            <p class="form__error" role="alert">Veuillez saisir votre prénom.</p>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="lastname">Nom <span class="form__required" aria-hidden="true">*</span></label>
+            <input class="form__input" id="lastname" name="lastname" type="text" placeholder="Nom" autocomplete="family-name" required>
+            <p class="form__error" role="alert">Veuillez saisir votre nom.</p>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="email">Adresse e-mail <span class="form__required" aria-hidden="true">*</span></label>
+           <input class="form__input" id="email" name="email" type="email" placeholder="Adresse e-mail" autocomplete="email" required>
+            <p class="form__error" role="alert">Veuillez saisir une adresse e-mail valide.</p>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="phone">Numéro de téléphone <span class="form__required" aria-hidden="true">*</span></label>
+            <input class="form__input" id="phone" name="phone" type="tel" placeholder="Numéro de téléphone" autocomplete="tel" required>
+            <p class="form__error" role="alert">Veuillez saisir votre numéro de téléphone.</p>
+          </div>
+
+          <button class="form__submit" type="submit">Participer</button>
+        </form>
+
+        <p class="modal__success" role="status" hidden>Merci, votre inscription est bien enregistrée.</p>
+      </div>
+    </dialog>
+
+
+
+
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@use "../utils/variables" as v;
+
+.modal {
+  width: 550px;
+  padding: 0;
+  border: none;
+  background: v.$d-color;
+  color: v.$a-color;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &__content {
+    position: relative;
+    padding: 40px 30px 30px;
+    text-align: center;
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+  }
+
+  &__title {
+    font-family: v.$a-font;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    font-family: v.$a-font;
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+
+  &__success {
+    padding: 30px 0;
+  }
+}
+
+.modal [hidden] {
+  display: none;
+}

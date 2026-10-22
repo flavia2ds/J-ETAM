@@ -1,0 +1,50 @@
+@use "../utils/variables" as v;
+
+.video {
+  position: relative;
+
+  &__element1 {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  &__element2 {
+    display: none;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  &__credits {
+    font-family: v.$a-font;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    gap: 30px;
+    color: v.$b-color;
+    font-size: 9px;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: v.$bp-desktop) {
+    &__elements {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__element2 {
+      display: block;
+    }
+
+    &__credits {
+      left: calc(50% + 40px);
+      font-size: 12px;
+      gap: 80px;
+      line-height: 1.7;
+    }
+  }
+}
